@@ -1,1 +1,4 @@
-Hello Git!
+3D Browser
+==========
+
+Windows based 3D objects browser. The rendering of the images is done by software (i.e. no hardware acceleration needed).
