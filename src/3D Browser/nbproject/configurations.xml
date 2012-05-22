@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="79">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>base.h</itemPath>
+      <itemPath>light.h</itemPath>
+      <itemPath>list.h</itemPath>
+      <itemPath>map.h</itemPath>
+      <itemPath>object.h</itemPath>
+      <itemPath>pnormal.h</itemPath>
+      <itemPath>point.h</itemPath>
+      <itemPath>rbtree.h</itemPath>
+      <itemPath>resource.h</itemPath>
+      <itemPath>sarr.h</itemPath>
+      <itemPath>sgroup.h</itemPath>
+      <itemPath>smart.h</itemPath>
+      <itemPath>sptr.h</itemPath>
+      <itemPath>tmatrix.h</itemPath>
+      <itemPath>triangle.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <commandLine>-Wall</commandLine>
+          <warningLevel>3</warningLevel>
+        </cTool>
+        <ccTool>
+          <commandLine>-Wall -mwindows</commandLine>
+          <warningLevel>3</warningLevel>
+        </ccTool>
+        <asmTool>
+          <warningLevel>3</warningLevel>
+          <commandLine>-Wall</commandLine>
+        </asmTool>
+        <linkerTool>
+          <additionalDep>resource.o</additionalDep>
+          <commandLine>resource.o</commandLine>
+        </linkerTool>
+      </compileType>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>6</developmentMode>
+          <commandLine>-Wall</commandLine>
+          <warningLevel>3</warningLevel>
+        </cTool>
+        <ccTool>
+          <developmentMode>6</developmentMode>
+          <commandLine>-Wall -mwindows</commandLine>
+          <warningLevel>3</warningLevel>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>6</developmentMode>
+          <warningLevel>3</warningLevel>
+          <commandLine>-Wall</commandLine>
+        </asmTool>
+        <linkerTool>
+          <additionalDep>resource.o</additionalDep>
+          <commandLine>resource.o -static</commandLine>
+        </linkerTool>
+      </compileType>
+    </conf>
+  </confs>
+</configurationDescriptor>
